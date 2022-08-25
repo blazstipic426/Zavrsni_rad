@@ -1,0 +1,29 @@
+<table border="1">
+<tr>
+    <td>ID</td>
+    <td>Datum i vrijeme</td>
+    <td>Saksije</td>
+    <td>Osobe</td>
+    <td>Kamioni</td>
+    <td>auta</td>
+    <td>Vatrogasni aparati</td>
+    <td>klupe</td>
+    <td>Kisobrani</td>
+
+</tr>
+
+    {% for user in userDetails %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        <td>{{user[3]}}</td>
+        <td>{{user[4]}}</td>
+        <td>{{user[5]}}</td>
+        <td>{{user[6]}}</td>
+        <td>{{user[7]}}</td>
+        <td>{{user[8]}}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
